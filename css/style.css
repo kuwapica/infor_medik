@@ -397,6 +397,20 @@ body {
     text-align: center;
 }
 
+/* important styles */
+.important {
+    display: flex;
+
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.important-content {
+    display: flex;
+    flex-direction: column;
+}
+
 /* faq styles */
 .frequently-asked {
     display: flex;
