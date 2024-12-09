@@ -1,9 +1,16 @@
+//buat test
 document.getElementById("testForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
     // Ambil data dari form berdasarkan radio button yang dipilih
     const scores = Array.from(document.querySelectorAll("input[type='radio']:checked"))
         .map(input => parseInt(input.value));
+
+    // Validasi apakah semua pertanyaan telah dijawab
+    if (scores.length < 2) { // Ganti angka ini sesuai jumlah pertanyaan
+        alert("Harap jawab semua pertanyaan sebelum mengirimkan.");
+        return;
+    }
 
     // Hitung total skor
     const totalScore = scores.reduce((sum, score) => sum + score, 0);
@@ -21,9 +28,10 @@ document.getElementById("testForm").addEventListener("submit", function (e) {
     }
 
     // Tampilkan hasil
-    document.getElementById("result").innerHTML = `
+    document.getElementById("result-test").innerHTML = `
         <h3>Hasil Tes</h3>
         <p>Skor Anda: ${totalScore}</p>
         <p>${result}</p>
     `;
 });
+

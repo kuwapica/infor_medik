@@ -1,55 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mental Health Test</title>
-    <link rel="icon" type="image/x-icon" href="images/icon.png">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="body-test">
+    <link rel="icon" type="image/x-icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body-test">
     <header class="main-header">
-        <div class="container-header">
-        <a href="index.html" class="main-logo">
-            Still With You
-        </a>
-            <nav>
-                <a class="navbar" href="index.html">Beranda</a>
-                <a class="navbar" href="#package">Artikel</a>
-                <a class="navbar" href="#">Tentang Kami</a>
-                <a class="btn-test" href="test.html">Mulai tes</a>
-            </nav>
-        </div>
+      <div class="container-header">
+        <a href="index.html" class="main-logo"> Still With You </a>
+        <nav>
+          <a class="navbar" href="index.html">Home</a>
+          <a class="navbar" href="#">About</a>
+          <a class="navbar" href="#package">Articles</a>
+          <a class="navbar" href="#">Our Team</a>
+          <a class="btn-test" href="test.html">Mulai tes</a>
+        </nav>
+      </div>
     </header>
     <div class="container-test">
-        <h1>Mental Health Test</h1>
-        <form id="testForm">
-            <div class="question-section">
-                <h2>Stres</h2>
-                <p>1. Saya merasa tegang atau gugup hampir setiap hari.</p>
-                <div class="options-test">
-                    <label><input type="radio" name="q1" value="1" required> 1 - Sangat Tidak Setuju</label>
-                    <label><input type="radio" name="q1" value="2"> 2 - Tidak Setuju</label>
-                    <label><input type="radio" name="q1" value="3"> 3 - Netral</label>
-                    <label><input type="radio" name="q1" value="4"> 4 - Setuju</label>
-                    <label><input type="radio" name="q1" value="5"> 5 - Sangat Setuju</label>
-                </div>
+      <h1>Mental Health Test</h1>
+      <form id="testForm">
+        <div class="question-section">
+          <h2>Stres</h2>
+          <p>1. Saya merasa tegang atau gugup hampir setiap hari.</p>
+          <div class="options-test">
+            <label
+              ><input type="radio" name="q1" value="1" required /> 1 - Sangat
+              Tidak Setuju</label
+            >
+            <label
+              ><input type="radio" name="q1" value="2" /> 2 - Tidak
+              Setuju</label
+            >
+            <label><input type="radio" name="q1" value="3" /> 3 - Netral</label>
+            <label><input type="radio" name="q1" value="4" /> 4 - Setuju</label>
+            <label
+              ><input type="radio" name="q1" value="5" /> 5 - Sangat
+              Setuju</label
+            >
+          </div>
 
-                <p>2. Saya sering merasa sulit untuk berkonsentrasi.</p>
-                <div class="options-test">
-                    <label><input type="radio" name="q2" value="1" required> 1 - Sangat Tidak Setuju</label>
-                    <label><input type="radio" name="q2" value="2"> 2 - Tidak Setuju</label>
-                    <label><input type="radio" name="q2" value="3"> 3 - Netral</label>
-                    <label><input type="radio" name="q2" value="4"> 4 - Setuju</label>
-                    <label><input type="radio" name="q2" value="5"> 5 - Sangat Setuju</label>
-                </div>
-                <!-- Tambahkan pertanyaan lainnya dengan pola yang sama -->
-            </div>
+          <p>2. Saya sering merasa sulit untuk berkonsentrasi.</p>
+          <div class="options-test">
+            <label
+              ><input type="radio" name="q2" value="1" required /> 1 - Sangat
+              Tidak Setuju</label
+            >
+            <label
+              ><input type="radio" name="q2" value="2" /> 2 - Tidak
+              Setuju</label
+            >
+            <label><input type="radio" name="q2" value="3" /> 3 - Netral</label>
+            <label><input type="radio" name="q2" value="4" /> 4 - Setuju</label>
+            <label
+              ><input type="radio" name="q2" value="5" /> 5 - Sangat
+              Setuju</label
+            >
+          </div>
+          <!-- Tambahkan pertanyaan lainnya dengan pola yang sama -->
+        </div>
 
-            <button type="submit" class="btn-submit">Submit</button>
-        </form>
-        <div id="result-test"></div>
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+      <div id="result-test"></div>
     </div>
+
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Articles</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Our Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        </ul>
+        <p>&copy;2024 NiFa Team | All Rights Reserved</p>
+        
+
+    
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script src="js/script.js"></script>
 </body>
