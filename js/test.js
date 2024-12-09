@@ -1,4 +1,3 @@
-//buat test
 document.getElementById("testForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -7,7 +6,7 @@ document.getElementById("testForm").addEventListener("submit", function (e) {
         .map(input => parseInt(input.value));
 
     // Validasi apakah semua pertanyaan telah dijawab
-    if (scores.length < 2) { // Ganti angka ini sesuai jumlah pertanyaan
+    if (scores.length < 20) { // Ganti angka ini sesuai jumlah pertanyaan
         alert("Harap jawab semua pertanyaan sebelum mengirimkan.");
         return;
     }
@@ -34,4 +33,3 @@ document.getElementById("testForm").addEventListener("submit", function (e) {
         <p>${result}</p>
     `;
 });
-
