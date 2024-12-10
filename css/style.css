@@ -651,7 +651,17 @@ body {
 }
 
 .name {
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.nim {
+    font-size: 15px;
     font-weight: 700;
     color: rgb(102, 102, 102);
     margin-top: 0px;
